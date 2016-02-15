@@ -1,0 +1,32 @@
+
+
+body {
+  color: $colorBody;
+  font-family: 'AvenirLTStd-Roman';
+}
+h1 {
+  font-size: $h1FontSize;
+  //letter-spacing: 0.1em;
+  line-height: 1.6em;
+}
+h2 {
+  font-size: $h2FontSize;
+  //letter-spacing: 0.1em;
+  line-height: 1.6em;
+}
+h1, h2, h3 {
+  //color: $colorHeadings;
+  //font-family: 'merriweather_lightregular';
+  font-family: 'AvenirLTStd-Roman';
+  font-weight: 100;
+  text-transform: uppercase;
+  //margin: $base-line 0;
+ 
+}
+
+p, li, a {
+  -moz-transition: all .25s ease-in-out;
+  -ms-transition: all .25s ease-in-out;
+  -o-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
