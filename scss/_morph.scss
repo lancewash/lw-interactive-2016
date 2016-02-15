@@ -14,8 +14,8 @@
   z-index: 100;
   display: block;
   overflow: hidden;
-  width: 3em;
-  height: 3em;
+  //width: 3em;
+  //height: 3em;
   text-align: center;
   line-height: 3;
   cursor: pointer;
@@ -94,11 +94,11 @@
   //position: absolute;
   //top: 40px;
   //right: 40px;
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 4em;
+  top: 3em;
   overflow: hidden;
   border: none;
   background: url(../img/closeX.png) no-repeat center center;

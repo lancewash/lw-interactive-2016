@@ -3595,8 +3595,6 @@ i.icon.bed:before {
   z-index: 100;
   display: block;
   overflow: hidden;
-  width: 3em;
-  height: 3em;
   text-align: center;
   line-height: 3;
   cursor: pointer;
@@ -3671,11 +3669,11 @@ i.icon.bed:before {
 }
 
 .icon-close {
-  width: 65px;
-  height: 65px;
+  width: 80px;
+  height: 80px;
   position: absolute;
-  right: 40px;
-  top: 40px;
+  right: 4em;
+  top: 3em;
   overflow: hidden;
   border: none;
   background: url(../img/closeX.png) no-repeat center center;
@@ -4490,20 +4488,20 @@ i.icon.bed:before {
   height: 100vh;
   top: 0;
   left: 0;
-  padding: 4.5em 4em;
   background: black;
   z-index: 99999999;
 }
 
 /* Overlay closing cross */
 .overlay .overlay-close {
-  width: 60px;
-  height: 60px;
+  width: 80px;
+  height: 80px;
   position: absolute;
   right: 0;
   left: 0;
-  margin: 0 auto;
-  top: 5px;
+  margin: auto;
+  bottom: 0;
+  top: 0;
   overflow: hidden;
   border: none;
   background: url(../img/closeX.png) no-repeat center center;
