@@ -273,7 +273,8 @@ h1, h2, h3 {
 }
 
 p, li, a {
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out;
 }
 
 /* =Fonts
@@ -285,7 +286,7 @@ p, li, a {
   font-weight: 400;
   font-style: normal;
   font-stretch: normal;
-  unicode-range: U+0020-25CA;
+  unicode-range: U20-25CA;
 }
 
 @font-face {
@@ -454,6 +455,7 @@ i.fitted.icon {
 i.link.icon {
   cursor: pointer;
   opacity: 0.8;
+  -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
 
@@ -3717,7 +3719,8 @@ i.icon.bed:before {
   text-transform: uppercase;
   line-height: 3;
   position: fixed;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .content-style-overlay .icon-close:hover {
@@ -3768,9 +3771,8 @@ i.icon.bed:before {
 }
 
 .js .content-style-social a {
-  transition: -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translateX(100%);
   -ms-transform: translateX(100%);
       transform: translateX(100%);
@@ -3798,10 +3800,12 @@ i.icon.bed:before {
 }
 
 .morph-button-inflow.open .content-style-social a:nth-child(2) {
+  -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
 }
 
 .morph-button-inflow.open .content-style-social a:nth-child(3) {
+  -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
 
@@ -3952,7 +3956,8 @@ i.icon.bed:before {
 .morph-button > button:hover, .morph-button > button:active {
   color: #b69853;
   outline: none;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
   cursor: -webkit-zoom-in;
   cursor: zoom-in;
 }
@@ -3989,7 +3994,8 @@ i.icon.bed:before {
 
 .morph-button.open .morph-content {
   pointer-events: auto;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 /* Common styles for overlay and modal type (fixed morph) */
@@ -4006,11 +4012,13 @@ i.icon.bed:before {
   z-index: 1000;
   width: 100%;
   height: 100%;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .morph-button-fixed.open > button {
   opacity: 0;
+  -webkit-transition: opacity 0.25s;
   transition: opacity 0.25s;
 }
 
@@ -4018,6 +4026,7 @@ i.icon.bed:before {
   position: fixed;
   z-index: 900;
   opacity: 0;
+  -webkit-transition: opacity 0.3s 1s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
   transition: opacity 0.3s 1s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
 }
 
@@ -4029,6 +4038,7 @@ i.icon.bed:before {
   visibility: hidden;
   height: 0;
   opacity: 0;
+  -webkit-transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
   transition: opacity 0.1s, visibility 0s 0.1s, height 0s 0.1s;
 }
 
@@ -4036,6 +4046,7 @@ i.icon.bed:before {
   visibility: visible;
   height: auto;
   opacity: 1;
+  -webkit-transition: opacity 1s 0.5s;
   transition: opacity 1s 0.5s;
 }
 
@@ -4051,11 +4062,13 @@ i.icon.bed:before {
 /* Transitions for overlay button and sidebar button */
 .morph-button-overlay .morph-content,
 .morph-button-sidebar .morph-content {
+  -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
   transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
 }
 
 .morph-button-overlay.open .morph-content,
 .morph-button-sidebar.open .morph-content {
+  -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
   transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
 }
 
@@ -4093,6 +4106,7 @@ i.icon.bed:before {
   background: rgba(0, 0, 0, 0.5);
   content: '';
   opacity: 0;
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
   pointer-events: none;
 }
@@ -4108,6 +4122,7 @@ i.icon.bed:before {
 
 .morph-button-modal .morph-content {
   overflow: hidden;
+  -webkit-transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
   transition: opacity 0.3s 0.5s, width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
 }
 
@@ -4117,6 +4132,7 @@ i.icon.bed:before {
   margin: -210px 0 0 -300px;
   width: 600px;
   height: 420px;
+  -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
   transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s, margin 0.4s 0.1s;
 }
 
@@ -4182,6 +4198,7 @@ i.icon.bed:before {
   z-index: 100;
   letter-spacing: 1px;
   font-weight: 700;
+  -webkit-transition: bottom 0.4s 0.1s, right 0.4s 0.1s;
   transition: bottom 0.4s 0.1s, right 0.4s 0.1s;
 }
 
@@ -4214,6 +4231,7 @@ i.icon.bed:before {
 
 .morph-button-modal-2.open .morph-content > div,
 .morph-button-modal-3.open .morph-content > div {
+  -webkit-transition: opacity 0.3s 0.3s;
   transition: opacity 0.3s 0.3s;
 }
 
@@ -4253,6 +4271,7 @@ i.icon.bed:before {
 .morph-button-inflow-1 {
   width: 600px;
   margin: 2em auto;
+  -webkit-transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
   transition: height 0.5s cubic-bezier(0.7, 0, 0.3, 1);
 }
 
@@ -4271,9 +4290,8 @@ i.icon.bed:before {
   left: 50%;
   width: 220px;
   background-color: #fef0e3;
-  transition: height 0.3s, width 0.3s, -webkit-transform 0.3s;
+  -webkit-transition: height 0.3s, width 0.3s, -webkit-transform 0.3s;
   transition: height 0.3s, width 0.3s, transform 0.3s;
-  transition: height 0.3s, width 0.3s, transform 0.3s, -webkit-transform 0.3s;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
       transform: translateX(-50%) translateY(-50%);
@@ -4287,9 +4305,8 @@ i.icon.bed:before {
   height: 100%;
   background-color: transparent;
   color: #e75854;
-  transition: -webkit-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
   transition: transform 0.3s;
-  transition: transform 0.3s, -webkit-transform 0.3s;
 }
 
 .morph-button-inflow-2.open > button {
@@ -4343,6 +4360,7 @@ i.icon.bed:before {
 .morph-button .morph-content,
 .morph-button.open .morph-content,
 .morph-button-modal-4 .morph-clone {
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
@@ -4401,6 +4419,7 @@ i.icon.bed:before {
 }
 
 .no-transition {
+  -webkit-transition: none !important;
   transition: none !important;
 }
 
@@ -4413,6 +4432,7 @@ i.icon.bed:before {
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+    -webkit-transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
     transition: width 0.4s 0.1s, height 0.4s 0.1s, top 0.4s 0.1s, left 0.4s 0.1s;
   }
 }
@@ -4470,7 +4490,8 @@ i.icon.bed:before {
   height: 100vh;
   top: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.9);
+  padding: 4.5em 4em;
+  background: black;
   z-index: 99999999;
 }
 
@@ -4479,8 +4500,10 @@ i.icon.bed:before {
   width: 60px;
   height: 60px;
   position: absolute;
-  right: 30px;
-  top: 30px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  top: 5px;
   overflow: hidden;
   border: none;
   background: url(../img/closeX.png) no-repeat center center;
@@ -4514,7 +4537,6 @@ i.icon.bed:before {
 .overlay ul li {
   display: block;
   width: 33.3%;
-  height: 50vh;
   float: left;
   position: relative;
   text-align: left;
@@ -4534,10 +4556,11 @@ i.icon.bed:before {
   width: 100%;
   -webkit-transition: color 0.2s;
   text-decoration: none;
-  transition: color 0.2s;
-  transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
+  -webkit-transition: color 0.2s;
+          transition: color 0.2s;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 
 .overlay ul li a span {
@@ -4547,13 +4570,13 @@ i.icon.bed:before {
 }
 
 .overlay ul:hover a {
-  transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -webkit-transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
 }
 
 .overlay ul:hover a:hover {
-  background: #b69853;
+  background: white;
   opacity: 1;
 }
 
@@ -4561,12 +4584,14 @@ i.icon.bed:before {
 .overlay-hugeinc {
   opacity: 0;
   visibility: hidden;
+  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
 .overlay-hugeinc.open {
   opacity: 1;
   visibility: visible;
+  -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
 
@@ -4579,9 +4604,8 @@ i.icon.bed:before {
   opacity: 0.4;
   -webkit-transform: translateY(-25%) rotateX(35deg);
   transform: translateY(-25%) rotateX(35deg);
-  transition: opacity 0.5s, -webkit-transform 0.5s;
+  -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
   transition: transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .overlay-hugeinc.open nav ul {
@@ -4625,7 +4649,8 @@ i.icon.bed:before {
   background: white;
   padding: 9px 20px;
   text-transform: uppercase;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 .button:hover {
@@ -4832,13 +4857,14 @@ navigation
   border-bottom: 1px solid transparent;
   border-top: 1px solid transparent;
   float: right;
-  padding: .8rem 0 .9rem;
-  transition: all .75s ease;
-  -moz-transition: all .75s ease;
-  -webkit-transition: all .75s ease;
+  padding: 0.8rem 0 0.9rem;
+  transition: all 0.75s ease;
+  -moz-transition: all 0.75s ease;
+  -webkit-transition: all 0.75s ease;
 }
 
 .navbar ul {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -4867,9 +4893,9 @@ navigation
   padding: 1rem 0;
   text-decoration: none;
   text-transform: uppercase;
-  transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -webkit-transition: all .5s ease;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
 }
 
 .navbar li a:hover {
@@ -5007,15 +5033,19 @@ navigation
  *
  */
 .ui.grid {
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
@@ -5053,18 +5083,23 @@ navigation
 
 .ui.grid > .row {
   position: relative;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
   -webkit-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-pack: inherit;
   -webkit-justify-content: inherit;
   -ms-flex-pack: inherit;
   justify-content: inherit;
+  -webkit-box-align: stretch;
   -webkit-align-items: stretch;
   -ms-flex-align: stretch;
   align-items: stretch;
@@ -5107,6 +5142,7 @@ navigation
 }
 
 .ui.grid .column + .ui.vertical.divider {
+  height: -webkit-calc(50% - 1rem);
   height: calc(50% - 1rem);
 }
 
@@ -5609,6 +5645,7 @@ navigation
 
 .ui.centered.grid, .ui.centered.grid > .row, .ui.grid > .centered.row {
   text-align: center;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -5700,6 +5737,7 @@ navigation
   content: "";
   top: 0;
   left: 0;
+  width: -webkit-calc(100% - 2rem);
   width: calc(100% - 2rem);
   height: 1px;
   margin: 0 1rem;
@@ -5729,12 +5767,14 @@ navigation
 .ui.relaxed[class*="vertically divided"].grid > .row:before {
   margin-left: 1.5rem;
   margin-right: 1.5rem;
+  width: -webkit-calc(100% - 3rem);
   width: calc(100% - 3rem);
 }
 
 .ui[class*="very relaxed"][class*="vertically divided"].grid > .row:before {
   margin-left: 5rem;
   margin-right: 5rem;
+  width: -webkit-calc(100% - 5rem);
   width: calc(100% - 5rem);
 }
 
@@ -5778,42 +5818,51 @@ navigation
 }
 
 .ui.grid > .row > [class*="top aligned"].column, .ui.grid > [class*="top aligned"].column:not(.row), .ui.grid > [class*="top aligned"].row > .column, .ui[class*="top aligned"].grid .column:not(.row) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   vertical-align: top;
-  -ms-flex-item-align: start !important;
   -webkit-align-self: flex-start !important;
-          align-self: flex-start !important;
+  -ms-flex-item-align: start !important;
+  align-self: flex-start !important;
 }
 
 .ui.grid > .row > [class*="middle aligned"].column, .ui.grid > [class*="middle aligned"].column:not(.row), .ui.grid > [class*="middle aligned"].row > .column, .ui[class*="middle aligned"].grid .column:not(.row) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   vertical-align: middle;
-  -ms-flex-item-align: center !important;
   -webkit-align-self: center !important;
-          align-self: center !important;
+  -ms-flex-item-align: center !important;
+  align-self: center !important;
 }
 
 .ui.grid > .row > [class*="bottom aligned"].column, .ui.grid > [class*="bottom aligned"].column:not(.row), .ui.grid > [class*="bottom aligned"].row > .column, .ui[class*="bottom aligned"].grid .column:not(.row) {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
   vertical-align: bottom;
-  -ms-flex-item-align: end !important;
   -webkit-align-self: flex-end !important;
-          align-self: flex-end !important;
+  -ms-flex-item-align: end !important;
+  align-self: flex-end !important;
 }
 
 .ui.grid > .row > .stretched.column, .ui.grid > .stretched.column:not(.row), .ui.grid > .stretched.row > .column, .ui.stretched.grid > .column, .ui.stretched.grid > .row > .column {
+  display: -webkit-inline-box !important;
   display: -webkit-inline-flex !important;
   display: -ms-inline-flexbox !important;
   display: inline-flex !important;
-  -ms-flex-item-align: stretch;
   -webkit-align-self: stretch;
-          align-self: stretch;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
@@ -5828,19 +5877,20 @@ navigation
 
 .ui.grid > .row > [class*="left aligned"].column, .ui.grid > [class*="left aligned"].column.column, .ui.grid > [class*="left aligned"].row > .column, .ui[class*="left aligned"].grid .column {
   text-align: left;
-  -ms-flex-item-align: inherit;
   -webkit-align-self: inherit;
-          align-self: inherit;
+  -ms-flex-item-align: inherit;
+  align-self: inherit;
 }
 
 .ui.grid > .row > [class*="center aligned"].column, .ui.grid > [class*="center aligned"].column.column, .ui.grid > [class*="center aligned"].row > .column, .ui[class*="center aligned"].grid .column {
   text-align: center;
-  -ms-flex-item-align: inherit;
   -webkit-align-self: inherit;
-          align-self: inherit;
+  -ms-flex-item-align: inherit;
+  align-self: inherit;
 }
 
 .ui[class*="center aligned"].grid {
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -5848,9 +5898,9 @@ navigation
 
 .ui.grid > .row > [class*="right aligned"].column, .ui.grid > [class*="right aligned"].column.column, .ui.grid > [class*="right aligned"].row > .column, .ui[class*="right aligned"].grid .column {
   text-align: right;
-  -ms-flex-item-align: inherit;
   -webkit-align-self: inherit;
-          align-self: inherit;
+  -ms-flex-item-align: inherit;
+  align-self: inherit;
 }
 
 .ui.grid .justified.column, .ui.grid > .justified.row > .column, .ui.justified.grid, .ui.justified.grid > .column, .ui.justified.grid > .row > .column {
@@ -6111,9 +6161,8 @@ navigation
   -webkit-transform: translateY(20px);
   -ms-transform: translateY(20px);
   transform: translateY(20px);
-  transition: opacity 0.3s 0.7s, -webkit-transform 0.3s 0.7s;
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0.3s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
-  transition: transform 0.3s 0.7s, opacity 0.3s 0.7s, -webkit-transform 0.3s 0.7s;
 }
 
 .cd-image-label.is-hidden {
@@ -6225,9 +6274,8 @@ navigation
   -webkit-transform: translate3d(0, 0, 0) scale(1);
   -ms-transform: translate3d(0, 0, 0) scale(1);
   transform: translate3d(0, 0, 0) scale(1);
-  transition: opacity 0s 0.7s, -webkit-transform 0.3s 0.7s;
+  -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
   transition: transform 0.3s 0.7s, opacity 0s 0.7s;
-  transition: transform 0.3s 0.7s, opacity 0s 0.7s, -webkit-transform 0.3s 0.7s;
 }
 
 /*!
@@ -8113,40 +8161,18 @@ navigation
 /*---------------*/
 figure.hover-animate figcaption::before {
   position: absolute;
-  bottom: 25px;
+  border-bottom: 8px solid #fff;
+  bottom: 0;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, black 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, black 100%);
   content: '';
   opacity: 0;
   -webkit-transform: translate3d(100, 50%, 0);
   transform: translate3d(100, 50%, 0);
-}
-
-figure.hover-animate.n2n figcaption::before {
-  border-bottom: 40px solid #b2232f;
-}
-
-figure.hover-animate.gs figcaption::before {
-  border-bottom: 40px solid #455a64;
-}
-
-figure.hover-animate.fabc figcaption::before {
-  border-bottom: 40px solid #3c0308;
-}
-
-figure.hover-animate.sii figcaption::before {
-  border-bottom: 40px solid #2FADD5;
-}
-
-figure.hover-animate.lw figcaption::before {
-  border-bottom: 40px solid #b69853;
-}
-
-figure.hover-animate.mc figcaption::before {
-  border-bottom: 40px solid #323232;
 }
 
 figure.hover-animate h2 {
@@ -8155,9 +8181,8 @@ figure.hover-animate h2 {
   left: 0;
   width: 100%;
   color: #484c61;
-  transition: color 0.35s, -webkit-transform 0.35s;
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
   transition: transform 0.35s, color 0.35s;
-  transition: transform 0.35s, color 0.35s, -webkit-transform 0.35s;
   -webkit-transform: translate3d(0, -50%, 0);
   transform: translate3d(0, -50%, 0);
 }
@@ -8175,9 +8200,8 @@ figure.hover-animate figcaption::before,
 figure.hover-animate p {
   color: white;
   text-transform: uppercase;
-  transition: opacity 0.35s, -webkit-transform 0.35s;
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s, -webkit-transform 0.35s;
 }
 
 figure.hover-animate p {
@@ -8191,11 +8215,11 @@ figure.hover-animate p {
   -webkit-transform: translate3d(0, 10px, 0);
   transform: translate3d(0, 10px, 0);
   z-index: 9999999;
-  transition: all .25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
 }
 
 figure.hover-animate p a {
-  background: url("../img/chevron-rt2.png") no-repeat 90% 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
   color: white;
   display: block;
@@ -8207,9 +8231,13 @@ figure.hover-animate p a {
 }
 
 figure.hover-animate p a:hover {
-  background: url("../img/chevron-rt1.png") no-repeat 91% 50% white;
   color: black;
   cursor: pointer;
+}
+
+figure.hover-animate {
+  margin-bottom: -10px;
+  overflow: hidden;
 }
 
 figure.hover-animate:hover h2 {
@@ -8223,26 +8251,6 @@ figure.hover-animate:hover p {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-}
-
-figure.hover-animate.lw:hover,
-figure.hover-animate.mc:hover {
-  background: rgba(0, 0, 0, 0.75);
-  transition: all .5s ease-in-out;
-}
-
-figure.hover-animate.lw:hover img,
-figure.hover-animate.mc:hover img {
-  transition: all .25s ease-in-out;
-  opacity: 0;
-}
-
-figure.hover-animate.mc:hover {
-  background: #323232;
-}
-
-figure.hover-animate.lw:hover {
-  background: #b69853;
 }
 
 /*
@@ -8344,9 +8352,11 @@ body {
 
 .header-main .grid {
   margin: 0 auto;
+  display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
@@ -8414,11 +8424,11 @@ body {
 }
 
 .header-mid h1 {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
   font-weight: 800;
   color: #b69853;
   letter-spacing: .1rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   margin-bottom: .5rem;
   text-transform: uppercase;
   letter-spacing: .1rem;
@@ -8598,14 +8608,12 @@ body {
   width: 50px;
 }
 
-.project-items {
-  height: 100vh;
-}
-
 .home .project-item {
+  -webkit-box-align: center !important;
   -webkit-align-items: center !important;
       -ms-flex-align: center !important;
           align-items: center !important;
+  -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -8653,9 +8661,7 @@ body {
 
 .home .project-item h2 {
   font-weight: 800;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: white;
   letter-spacing: .1rem;
   left: 10%;
@@ -8671,14 +8677,17 @@ body {
 }
 
 .home .project-item .dark h2 {
-  border-top: 1px solid rgba(0, 0, 0, 0.25) !important;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.25) !important;
   color: rgba(0, 0, 0, 0.75);
 }
 
 .subpage .ui.grid.project-item {
   margin: 0;
   height: 50vh;
+}
+
+.subpage .ui.grid.project-item .column {
+  margin-bottom: 10px !important;
+  overflow: hidden;
 }
 
 .subpage .ui.grid.project-item.mc-bg {
@@ -8802,7 +8811,7 @@ body {
   }
   .header-mid {
     height: 320px;
-    padding: 0 .5rem !important;
+    padding: 0 0.5rem !important;
   }
   .header-mid h1:before, .header-mid h1:after {
     display: none;

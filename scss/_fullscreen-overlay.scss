@@ -6,8 +6,8 @@
   height: 100vh;
   top: 0;
   left: 0;
-  padding: 5em 4em;
-  background: rgba(0,0,0,.9);
+  padding: 4.5em 4em;
+  background: rgba(0,0,0,1);
   z-index: 99999999;
   //overflow-y: scroll;
 }
@@ -55,7 +55,7 @@
 .overlay ul li {
   display: block;
   width: 33.3%;
-  height: 50vh;
+  //height: 50vh;
   float: left;
   position: relative;;
   //height: 20%;
@@ -118,7 +118,7 @@
     -webkit-transition: all .5s ease-in-out;
 
     &:hover {
-      background: #b69853;
+      background: rgba(255,255,255,1);
       opacity: 1;
     }
   }
